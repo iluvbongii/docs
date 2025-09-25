@@ -150,13 +150,10 @@ figcaption {
   opacity: 0.8 !important;
 }
 
-/* Make site name visible in header only */
+/* Hide site name text in header only, not page titles */
 nav header h1,
 nav header span,
 nav header a,
-header h1,
-header span,
-header a,
 .logo-text,
 .site-name,
 .brand-text,
@@ -164,12 +161,9 @@ header a,
 [data-testid="site-name"],
 nav [data-testid="logo-text"],
 nav [data-testid="site-name"] {
-  color: #ffffff !important;
-  font-size: 1.25rem !important;
-  font-weight: 600 !important;
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 /* Make page titles much larger */

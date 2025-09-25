@@ -33,6 +33,10 @@
       }
     ]
   },
+  "logo": {
+    "light": "/logo/ux400.png",
+    "dark": "/logo/ux400.png"
+  },
   "appearance": {
     "default": "dark",
     "strict": true
