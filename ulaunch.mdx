@@ -1,102 +1,86 @@
 ---
 title: "uLaunch"
-description: "Crafted for devs, the true deployer toolkit"
+description: "Crafted for devs, the true deployer's toolkit"
 icon: "terminal"
 ---
 
-## uLaunch Overview
+For serious devs, uxento also offers **uLaunch** - an extremely streamlined panel dedicated to building and launching coins.   
 
-uLaunch is the ultimate deployment toolkit designed specifically for developers who need reliable, fast, and comprehensive deployment solutions across multiple platforms and environments.
+<Frame caption="uLaunch Panel">
+  <img 
+    src="/images/ulaunch1.png" 
+    alt="Udev Overview"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
-## Core Features
+uLaunch is an entirely separate category within uxento, devoted to serious deployers who wish to stay ahead of the curve when launching coins. Within uLaunch you will find a CT tracker panel, and a multi-feed panel which will display posts in real time from tracked accounts/feeds any of can be used to deploy a new coin. To do so, simply click Deploy to be taken to the uDev Launch Panel where you may use any of the custom uDev Tools (sniper/bundler/multi-deployer etc.)
 
-### Multi-Platform Deployment
-Deploy your applications across various platforms:
-- **Cloud Providers**: AWS, Google Cloud, Azure
-- **Container Platforms**: Docker, Kubernetes
-- **Serverless**: Vercel, Netlify, AWS Lambda
-- **Traditional Hosting**: VPS, Dedicated servers
+<Warning>Please note, the uLaunch CT Tracker is a separate tracker tailored for devs. We do not recommend buying coins from this feed as many devs have access to add accounts to the uLaunch CT Tracker.</Warning>
 
-### Developer-First Design
-Built with developers in mind:
-- **CLI Integration**: Seamless command-line interface
-- **CI/CD Pipeline**: Automated deployment workflows
-- **Environment Management**: Staging, production, and development environments
-- **Rollback Capabilities**: Quick recovery from failed deployments
+## Add Custom X Accounts:
+One defining feature of uLaunch is the ability to track your own X accounts in the uLaunch CT Tracker. To do this, simply navigate to the [Content Filters](#content-filters) settings by clicking the Filter icon above your uLaunch CT Panel. 
 
-### Advanced Monitoring
-Keep track of your deployments:
-- **Real-time Status**: Live deployment monitoring
-- **Performance Metrics**: Detailed analytics and reporting
-- **Error Tracking**: Comprehensive logging and debugging
-- **Health Checks**: Automated service monitoring
+<Frame caption="Content Filters Button">
+  <img 
+    src="/images/ulaunch2.png" 
+    alt="Udev Overview"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
-## Getting Started
+Within this panel, developers have the ability to add Custom X Accounts they wish to track via the uLaunch CT Tracker. Simply add any X username and add. You must have launched at least 1 coin via uxento for permission to add an account to the uLaunch CT Tracker. Become a premium user (add an amount of accounts by applying here: discord.gg/uLaunch.)
+You can also manage and filter your tracked CT accounts at any time using this panel. Simply tick/untick as needed or click the quick Enable/Disable All buttons; you may also search usernames, sort by recently added/alphabetical order, or filter only custom accounts by clicked 'Show My Custom'. 
 
-<Steps>
-<Step title="Install uLaunch CLI">
-```bash
-npm install -g ulaunch
-```
-</Step>
+The uLaunch CT Tracker follows the same CT Tracker AIO & Vision uses 1:1, except you can also add your own custom accounts in the uLaunch CT Tracker. Please note that new accounts are auto-enabled by default but can be disabled manually via your CT Account Filters (located via your uxento settings button) by toggling 'Auto-Enable New Accounts' off/on. You may also sort tracked accounts by 'Recently Added' in both Content Filter panels. 
 
-<Step title="Initialize Project">
-```bash
-ulaunch init
-```
-This creates a `ulaunch.json` configuration file in your project.
-</Step>
 
-<Step title="Configure Deployment">
-Set up your deployment targets and environments in the configuration file.
-</Step>
+Accounts added within the last 12 hours will have a 'New' tag displayed on top of them to easily alert you when an account has been recently added. There is also a notification panel (the Bell icon next to your profile avatar) which will alert you whenever a new account is added to your tracker. Ensure to hit the Refresh button when following notifications if new accounts have not shown up in your Filter Settings. 
 
-<Step title="Deploy">
-```bash
-ulaunch deploy --env production
-```
-</Step>
-</Steps>
 
-## Configuration
+<Warning>uxento does not take responsibility for what gets shown in your CT Tracker feeds. We no longer offer any kind of refunds - we've given YOU the control to see what YOU want to see.</Warning>
 
-### Basic Configuration
-```json
-{
-  "name": "my-app",
-  "version": "1.0.0",
-  "environments": {
-    "staging": {
-      "provider": "vercel",
-      "domain": "staging.myapp.com"
-    },
-    "production": {
-      "provider": "aws",
-      "region": "us-east-1"
-    }
-  }
-}
-```
+## Content Filters:
+Users may also filter all of the content they see in uLaunch. To do this simply navigate to the Content Filters settings to find filters for your uLaunch CT Tracker (as shown above), News Feed, Instagram and Truth Social Trackers. You can manage which accounts are being tracked by unticking/ticking as needed. 
 
-### Advanced Features
-- **Environment Variables**: Secure configuration management
-- **Build Scripts**: Custom build and deployment commands
-- **Health Checks**: Automated service validation
-- **Notifications**: Slack, Discord, and email alerts
 
-## Integration
+## Feed Notifications:
+You may configure custom notifications for certain trackers, keywords and accounts via the Feed Notifications button (the bell icon above your uLaunch CT Panel).
 
-### CI/CD Pipelines
-uLaunch integrates seamlessly with popular CI/CD platforms:
-- GitHub Actions
-- GitLab CI
-- Jenkins
-- CircleCI
 
-### Version Control
-- **Git Integration**: Automatic deployment triggers
-- **Branch-based Deployments**: Different environments for different branches
-- **Tag-based Releases**: Production deployments from git tags
+Within your feed notification settings, you can set up custom sounds for each individual tracker, as well as manage Keyword/Ticker Alerts and Custom Account Alerts:
+
+## Ticker/CA Detection: 
+Automatically detects and highlights any cryptocurrency tickers (such as $BTC/$ETH) and/or any Solana contract addresses that are shown on your feed. Simply toggle the feature on/off, and then configure your highlight color and alert sound. 
+
+
+#### Keyword Alerts:
+Get highlighted alerts and custom sounds when specific keywords appear in your feed. You may add individual keywords, add them in bulk, or import/export them in JSON formatting. 
+
+
+#### Custom CT Account Alerts:
+You may also receive the same alerts/notifications for custom CT accounts. Simply search the desired handle and configure the alert settings. 
+
+#### uLaunch Card Settings: 
+You may also quickly customize the uLaunch Feed Cards by clicking the Card Settings button (the Wand icon above the CT panel). 
+
+uLaunch Cards can be color coded for ease of use, and can be made more compact with less visible information for a more streamlined experience. Text size can also be adjusted, allowing you to customize readability to your preference.
+
+
+#### Multi-Feed Tracker:
+The Multi-Feed tracker will display Follows/Profile Updates as well as the News Feed if toggled on. Active sources can be managed via the Active Sources button in the top right of the Multi-Feed. Simply tick/untick as needed. 
+
+You may also hide this panel at anytime by clicking the Hide button (the Eye icon.) 
 
 <Info>
 uLaunch is currently in beta. Join our Discord community for early access and support.

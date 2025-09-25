@@ -60,6 +60,16 @@ body:has(.welcome-page) #pagination {
 /* Make columns wider on welcome page */
 .welcome-page .columns { max-width: 1400px; margin: 0 auto; padding: 0 2rem; }
 
+/* Make content wider on full mode pages */
+.prose:has([data-mode="full"]),
+body:has([data-mode="full"]) .prose,
+body:has([data-mode="full"]) main,
+body:has([data-mode="full"]) .content {
+  max-width: 1600px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
 /* Background color for all pages */
 body { background-color: #0a0a0f !important; }
 html { background-color: #0a0a0f !important; }
@@ -74,12 +84,7 @@ html.dark {
   background-color: #0a0a0f !important; 
 }
 
-/* Main content area background */
-main,
-.prose,
-.content { 
-  background-color: #0a0a0f !important; 
-}
+/* Main content area background - removed to fix callout components */
 
 /* Hide default "Powered by Mintlify" and show custom branding */
 footer a[href*="mintlify.com"],
@@ -134,5 +139,35 @@ footer a {
 }
 
 footer a:hover {
+  opacity: 1 !important;
+}
+
+/* Smaller frame captions */
+[data-component="frame"] figcaption,
+.frame figcaption,
+figcaption {
+  font-size: 0.75rem !important;
+  opacity: 0.8 !important;
+}
+
+/* Make site name visible in header only */
+nav header h1,
+nav header span,
+nav header a,
+header h1,
+header span,
+header a,
+.logo-text,
+.site-name,
+.brand-text,
+[data-testid="logo-text"],
+[data-testid="site-name"],
+nav [data-testid="logo-text"],
+nav [data-testid="site-name"] {
+  color: #ffffff !important;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  display: block !important;
+  visibility: visible !important;
   opacity: 1 !important;
 }

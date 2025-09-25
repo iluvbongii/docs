@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "palm",
-  "name": "uDraft",
+  "name": "uxento",
   "colors": {
     "primary": "#5765f2",
     "light": "#5765f2",
@@ -28,14 +28,10 @@
       {
         "group": "Referrals",
         "pages": [
-          "essentials/navigation"
+          "referrals"
         ]
       }
     ]
-  },
-  "logo": {
-    "light": "/logo/u400 circle.png",
-    "dark": "/logo/u400 circle.png"
   },
   "appearance": {
     "default": "dark",
