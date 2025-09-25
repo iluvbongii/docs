@@ -1,0 +1,37 @@
+---
+title: "Welcome"
+hideTitle: true
+mode: "wide"
+---
+
+<div className="welcome-page splash">
+  <div className="splash-video">
+      <video
+        className="splash-video-el"
+        src="/videos/splash.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        controls={false}
+        preload="metadata"
+      />
+  </div>
+  <h1 className="splash-title">welcome to uxento</h1>
+  <p className="splash-subtitle">tools designed for u.</p>
+</div>
+
+<Columns cols={2}>
+  <Card title="Uxento Vision" icon="wave-pulse" href="/uxento-vision">
+    uxento's All-in-One Alpha Hub.
+  </Card>
+  <Card title="uDev" icon="coin" href="/udev">
+    Launch your own Tokens via any platform, quicker than ever.
+  </Card>
+  <Card title="uxtension" icon="wrench" href="/uxtension">
+    Unbeatable tools for an unparalleled trenching experience.
+  </Card>
+  <Card title="uLaunch" icon="terminal" href="/ulaunch">
+    Crafted for devs, the true deployer's toolkit.
+  </Card>
+</Columns>

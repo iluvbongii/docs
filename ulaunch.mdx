@@ -1,0 +1,103 @@
+---
+title: "uLaunch"
+description: "Crafted for devs, the true deployer toolkit"
+icon: "terminal"
+---
+
+## uLaunch Overview
+
+uLaunch is the ultimate deployment toolkit designed specifically for developers who need reliable, fast, and comprehensive deployment solutions across multiple platforms and environments.
+
+## Core Features
+
+### Multi-Platform Deployment
+Deploy your applications across various platforms:
+- **Cloud Providers**: AWS, Google Cloud, Azure
+- **Container Platforms**: Docker, Kubernetes
+- **Serverless**: Vercel, Netlify, AWS Lambda
+- **Traditional Hosting**: VPS, Dedicated servers
+
+### Developer-First Design
+Built with developers in mind:
+- **CLI Integration**: Seamless command-line interface
+- **CI/CD Pipeline**: Automated deployment workflows
+- **Environment Management**: Staging, production, and development environments
+- **Rollback Capabilities**: Quick recovery from failed deployments
+
+### Advanced Monitoring
+Keep track of your deployments:
+- **Real-time Status**: Live deployment monitoring
+- **Performance Metrics**: Detailed analytics and reporting
+- **Error Tracking**: Comprehensive logging and debugging
+- **Health Checks**: Automated service monitoring
+
+## Getting Started
+
+<Steps>
+<Step title="Install uLaunch CLI">
+```bash
+npm install -g ulaunch
+```
+</Step>
+
+<Step title="Initialize Project">
+```bash
+ulaunch init
+```
+This creates a `ulaunch.json` configuration file in your project.
+</Step>
+
+<Step title="Configure Deployment">
+Set up your deployment targets and environments in the configuration file.
+</Step>
+
+<Step title="Deploy">
+```bash
+ulaunch deploy --env production
+```
+</Step>
+</Steps>
+
+## Configuration
+
+### Basic Configuration
+```json
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "environments": {
+    "staging": {
+      "provider": "vercel",
+      "domain": "staging.myapp.com"
+    },
+    "production": {
+      "provider": "aws",
+      "region": "us-east-1"
+    }
+  }
+}
+```
+
+### Advanced Features
+- **Environment Variables**: Secure configuration management
+- **Build Scripts**: Custom build and deployment commands
+- **Health Checks**: Automated service validation
+- **Notifications**: Slack, Discord, and email alerts
+
+## Integration
+
+### CI/CD Pipelines
+uLaunch integrates seamlessly with popular CI/CD platforms:
+- GitHub Actions
+- GitLab CI
+- Jenkins
+- CircleCI
+
+### Version Control
+- **Git Integration**: Automatic deployment triggers
+- **Branch-based Deployments**: Different environments for different branches
+- **Tag-based Releases**: Production deployments from git tags
+
+<Info>
+uLaunch is currently in beta. Join our Discord community for early access and support.
+</Info>

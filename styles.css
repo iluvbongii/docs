@@ -1,0 +1,138 @@
+/* ——— Minimal reset for homepage ——— */
+
+/* Hide title and group ONLY on welcome page */
+.welcome-page ~ * .eyebrow,
+.welcome-page ~ * #page-title,
+.welcome-page ~ * h1:not(.splash-title),
+.welcome-page ~ * nav[aria-label="Breadcrumb"],
+.welcome-page ~ * nav[aria-label="Breadcrumbs"],
+body:has(.welcome-page) .eyebrow,
+body:has(.welcome-page) #page-title,
+body:has(.welcome-page) h1:not(.splash-title),
+body:has(.welcome-page) nav[aria-label="Breadcrumb"],
+body:has(.welcome-page) nav[aria-label="Breadcrumbs"] { 
+  display: none !important; 
+}
+
+/* Hide next page preview ONLY on welcome page */
+body:has(.welcome-page) .next-page,
+body:has(.welcome-page) [data-next-page],
+body:has(.welcome-page) .page-navigation,
+body:has(.welcome-page) .next-page-preview,
+body:has(.welcome-page) .page-preview,
+body:has(.welcome-page) .next-page-button,
+body:has(.welcome-page) .page-nav,
+body:has(.welcome-page) .navigation-next,
+body:has(.welcome-page) .next-nav,
+body:has(.welcome-page) .page-navigation-next,
+body:has(.welcome-page) [aria-label*="next"],
+body:has(.welcome-page) [aria-label*="Next"],
+body:has(.welcome-page) a[href*="next"],
+body:has(.welcome-page) button[aria-label*="next"],
+body:has(.welcome-page) button[aria-label*="Next"],
+body:has(.welcome-page) .next,
+body:has(.welcome-page) .Next,
+body:has(.welcome-page) [class*="next"],
+body:has(.welcome-page) [class*="Next"],
+body:has(.welcome-page) [id*="next"],
+body:has(.welcome-page) [id*="Next"],
+body:has(.welcome-page) .page-footer,
+body:has(.welcome-page) .page-footer *,
+body:has(.welcome-page) #pagination { 
+  display: none !important; 
+}
+
+/* Splash */
+.splash { padding-top: 1vh; padding-bottom: 1.5rem; text-align: center; max-width: 1400px; margin: 0 auto; padding-left: 2rem; padding-right: 2rem; }
+.splash-graphic { width: min(1800px, 85vw); height: auto; margin: 0 auto 1rem; display: block; }
+.splash-video { max-width: min(1800px, 95vw); margin: 0 auto 1rem; }
+.splash-video-el { width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 12px; display: block; }
+.splash-title { font-size: clamp(2.75rem, 5vw, 4rem); font-weight: 800; color: #ffffff; margin: 0; line-height: 1.05; text-align: center; }
+.prose .splash-title { text-align: center !important; margin-left: auto; margin-right: auto; display: block; }
+.splash-subtitle { font-size: 0.95rem; color: #5765f2; margin-top: 0.2rem; margin-bottom: 0; opacity: 0.9; text-align: center; }
+
+/* Cards grid */
+.feature-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; max-width: 1400px; margin: 0 auto 4rem; padding: 0 2rem; }
+@media (min-width: 900px) { .feature-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; } }
+.feature-card .Card, .feature-card .card { border-radius: 16px; }
+.feature-card .Card { padding: 1.25rem; }
+
+/* Make columns wider on welcome page */
+.welcome-page .columns { max-width: 1400px; margin: 0 auto; padding: 0 2rem; }
+
+/* Background color for all pages */
+body { background-color: #0a0a0f !important; }
+html { background-color: #0a0a0f !important; }
+
+/* Dark mode background */
+[data-theme="dark"] body,
+[data-theme="dark"] html,
+.dark body,
+.dark html,
+body.dark,
+html.dark { 
+  background-color: #0a0a0f !important; 
+}
+
+/* Main content area background */
+main,
+.prose,
+.content { 
+  background-color: #0a0a0f !important; 
+}
+
+/* Hide default "Powered by Mintlify" and show custom branding */
+footer a[href*="mintlify.com"],
+footer a[href*="mintlify"],
+footer .powered-by,
+footer .mintlify-branding,
+footer a[href*="mintlify.com"]:after,
+footer a[href*="mintlify"]:after { 
+  display: none !important; 
+  visibility: hidden !important;
+}
+
+/* Footer layout - centered, stacked */
+footer {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 1rem 2rem !important;
+  max-width: 1400px !important;
+  margin: 5.4rem auto 0 auto !important;
+  gap: 1.5rem !important;
+}
+
+/* Add custom "powered by u." text on the left */
+footer::before {
+  content: "powered by u." !important;
+  color: #ffffff !important;
+  opacity: 0.7 !important;
+  font-size: 0.875rem !important;
+  font-family: inherit !important;
+  font-weight: bold !important;
+  justify-self: left !important;
+}
+
+/* Social links container - centered */
+footer > div:last-child,
+footer .socials {
+  display: flex !important;
+  gap: 2rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Social links styling */
+footer a {
+  color: #ffffff !important;
+  opacity: 0.7 !important;
+  text-decoration: none !important;
+  font-size: 0.875rem !important;
+  transition: opacity 0.2s ease !important;
+}
+
+footer a:hover {
+  opacity: 1 !important;
+}
