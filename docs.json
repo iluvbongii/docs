@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "palm",
-  "name": "uxento",
+  "name": "uxento Docs",
   "colors": {
     "primary": "#5765f2",
     "light": "#5765f2",
