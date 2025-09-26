@@ -142,12 +142,63 @@ footer a:hover {
   opacity: 1 !important;
 }
 
-/* Smaller frame captions */
+/* Smaller frame captions - centered - ultra aggressive targeting */
 [data-component="frame"] figcaption,
 .frame figcaption,
-figcaption {
-  font-size: 0.75rem !important;
+figcaption,
+.caption,
+[class*="caption"],
+[data-caption],
+[data-testid="caption"],
+.frame .caption,
+.frame [class*="caption"],
+.frame [data-caption],
+div[class*="frame"] figcaption,
+div[class*="frame"] .caption,
+div[class*="frame"] [class*="caption"],
+main figcaption,
+main .caption,
+main [class*="caption"],
+.prose figcaption,
+.prose .caption,
+.prose [class*="caption"],
+body figcaption,
+body .caption,
+body [class*="caption"],
+span[class*="caption"],
+p[class*="caption"],
+div[class*="caption"],
+/* Mintlify Frame component specific targeting */
+div[class*="Frame"] figcaption,
+div[class*="Frame"] .caption,
+div[class*="Frame"] [class*="caption"],
+div[class*="Frame"] p,
+div[class*="Frame"] span,
+div[class*="Frame"] div[class*="text"],
+div[class*="Frame"] div[class*="caption"],
+/* Target any text element inside a Frame */
+div[class*="Frame"] > *:not(img):not(video):not(iframe),
+div[class*="Frame"] *:not(img):not(video):not(iframe) {
+  font-size: 0.1rem !important;
   opacity: 0.8 !important;
+  text-align: center !important;
+  display: block !important;
+  margin: 0.5rem auto 0 auto !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Target Mintlify's actual Frame caption structure */
+[data-component-part="frame-caption"],
+[data-component-part="frame-caption"] p,
+[data-component-part="frame-caption"] * {
+  font-size: 0.72rem !important;
+  opacity: 0.8 !important;
+  text-align: center !important;
+  display: block !important;
+  margin: 0.5rem auto 0 auto !important;
+  width: 100% !important;
+  max-width: none !important;
 }
 
 /* Hide site name text in header only, not page titles */
@@ -176,5 +227,52 @@ main h1,
   font-size: 2.625rem !important;
   font-weight: 800 !important;
   line-height: 1.1 !important;
+  margin-bottom: 0rem !important;
+}
+
+/* Tighten spacing between page title and subtitle */
+h1 + p,
+#page-title + p,
+.page-title + p,
+main h1 + p,
+.prose h1 + p,
+[data-testid="page-title"] + p,
+h1 + .description,
+#page-title + .description,
+.page-title + .description,
+main h1 + .description,
+.prose h1 + .description,
+[data-testid="page-title"] + .description {
+  margin-top: 0rem !important;
   margin-bottom: 1.5rem !important;
+}
+
+/* More aggressive spacing removal */
+h1,
+h1 *,
+#page-title,
+#page-title *,
+.page-title,
+.page-title *,
+main h1,
+main h1 *,
+.prose h1,
+.prose h1 *,
+[data-testid="page-title"],
+[data-testid="page-title"] * {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Target any elements that might be between title and subtitle */
+h1 + *,
+#page-title + *,
+.page-title + *,
+main h1 + *,
+.prose h1 + *,
+[data-testid="page-title"] + * {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
