@@ -24,7 +24,7 @@ icon: "computer"
 0.75% + Launchpad (Pumpfun/Bonkfun/Heaven/BagsApp) Fee = **Buy/Sell**
 ## How to Set Up uDev:
 
-To set up uDev, firstly you must create a uDev account by registering with [Google, Discord or an alternative email provider](/uxento-vision). Once you have completed registering via your preferred gateway, uDev will generate a developer wallet and a private key. 
+To set up uDev, firstly you must create a uDev account by registering with [Google, Discord or an alternative email provider](/uxento-vision#how-to-access-uxento-vision%3A). Once you have completed registering via your preferred gateway, uDev will generate a developer wallet and a private key. 
 
 <Note>**Please ensure to save your private key securely as you won't be able to access it again.**</Note>
 In order to launch coins via uDev, you will need to load this wallet with a small amount of SOL to cover necessary dev fees. 
@@ -32,7 +32,7 @@ In order to launch coins via uDev, you will need to load this wallet with a smal
 _The minimum recommended amount is 0.1 SOL, which will cover both fees and allow you to buy a small allocation of your coin._
 
 
-You can also manage and import your own wallets into uDev, to learn how to do so click here.
+[You can also manage and import your own wallets into uDev, to learn how to do so click here.](/uDev#manage-developer-wallets-in-udev%3A)
 
 <Frame caption="Your Generated Wallet">
   <img 
@@ -84,7 +84,7 @@ With Dev Mode enabled, you can instantly launch coins via the tracker cards with
 <Frame>
   <div style={{ 
     display: 'flex', 
-    gap: '0.5rem', 
+    gap: '-0.5rem', 
     justifyContent: 'center', 
     flexWrap: 'wrap'
   }}>
@@ -165,13 +165,39 @@ Within the launch panel, you will be able to customize your coin's name, ticker,
 
 Social links will be auto-populated using the corresponding tweet, but can also be changed within the panel. You can also click the Star Icon to auto-generate a coin name and ticker - don't like the name/ticker? Just click it again to re-generate it. 
 
-Simply fill out the fields, input the amount of $SOL you wish to buy (or use one of the handy, editable presets) and click 'Create Coin' to launch your coin; uDev will then create your coin. 
+If the twitter link field is populated with a valid link, a Preview button will appear allowing you to actively preview the attached tweet. 
 
-You can also launch coins via your Trading Platform, click here to learn how. 
+<Frame caption="">
+  <img 
+    src="/images/twitprev.png" 
+    alt="Udev Overview"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
-Auto Populated Quick Launch Panel
+Simply fill out the fields, input the amount of $SOL you wish to buy (or use one of the handy, editable presets) and click 'Create Coin' to launch your coin; uDev will then create your coin. [You can also launch coins via your Trading Platform, click here to learn how.](/uDev#launch-coins-via-your-trading-platform%3A) 
+
+<Frame caption="Auto-Populated uDev Launch Panel">
+  <img 
+    src="/images/autopop.png" 
+    alt="Udev Overview"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 uDev's custom API boasts speeds under 100ms - making launching with uDev faster than any other platform - by far.
+
+<Note>As uxento continues to build, improve and update uDev - there may be a number of changes to the UI; if at any stage you wish to revert to the uDev Legacy UI - you may do so via the [Advanced Settings panel.](/uDev#advanced-settings%3A) </Note>
 
 ## How To Change Images in uDev
 
@@ -196,96 +222,461 @@ When you click on the plus button, you will have to option to find images using 
 
 Additionally, you may also use the custom ASCII Art Generator within the uDev Launch Panel to easily create ASCII Art for your coin. Simply click the ASCII button next to the Image Library in your uDev Launch Panel. 
 
-ASCII Generator Button
+
+<Frame caption="ASCII Generator Button.">
+  <img 
+    src="/images/ascii.png"
+    alt="uDev ASCII"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 Clicking the ASCII button will take you to the ASCII Art Generator panel where you may enter your desired text and select one of eight ASCII style fonts. 
+
+<Frame caption="">
+  <img 
+    src="/images/poo.png"
+    alt="uDev ASCII"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 ## uDev Studio:
 
 You may also create entirely custom artwork for your coins within the uDev Launch Panel using uDev Studio.  Simply click the Studio button next to the Image Library in your Launcher. 
 
+<Frame caption="">
+  <img 
+    src="/images/studio.png"
+    alt="uDev studio"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
+
+
 Clicking the Studio button will bring you to uDev Studio, a fully customizable, easy design editor to create images for your coins. 
 Pick from the pre-selected gradient backgrounds or choose a custom background from the colour picker, and then customize further by adding text and/or custom images. Once complete, click the Use button to finalize. 
+
+<Frame caption="Create Custom Artworks within uDev Studio">
+  <img 
+    src="/images/studio2.png"
+    alt="uDev studio"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 ## Vamp Coin:
 
 uDev also allows you to easily 'Vamp' coins and create tokens based on another coin's contract address, instantly. This allows you to easily PvP other emerging coins in real time. 
 
-Vamp Coin Button
+
+
+<Frame caption="Vamp Coin Button">
+  <img 
+    src="/images/vampbut.png"
+    alt="vamp"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 To do this, simply click the Coins icon, next to the Dev mode button, this will bring up a pop-up asking for the contract address of the coin you wish to vamp. Simply import the CA and uDev will retrieve all necessary information to launch so that only remaining thing you need to do is click Create Coin.
 
-You can also Vamp Coins via your trading platform, click here to learn how. 
+[You can also Vamp Coins via your trading platform, click here to learn how.](/uDev#launch-coins-via-your-trading-platform%3A)
 
-Import Any Contract Address to Vamp a Coin
+<Frame caption="Import Any Contract Address to Vamp a Coin">
+  <img 
+    src="/images/vampcoin.png"
+    alt="vamp"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
-uDev Retrieves All Necessary Data
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+
+<Frame caption="uDev Retrieves All Necessary Data">
+  <img 
+    src="/images/vampeg.png"
+    alt="vamp"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
+
+**Vamp Mode**
+
+You may toggle your Vamp Coin creation mode between Normal Vamp and Insta-Vamp. 
+
+When Insta-Vamp is enabled, uDev will instantly **Quick-Deploy** coins when any CA is entered via your preferred launch platform using the designated Insta-Vamp Amount. 
+
+<Frame caption="Vamp Mode">
+  <img 
+    src="/images/vamp2.png"
+    alt="vamp"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 ## Quick Deploy:
 
 The quickest and most efficient means of launching if you want to capitalize on trending memes/news is uDev's Quick Deploy feature. Quick Deploying can be done by highlighting any text from a tweet on your Uxento Vision and clicking Quick Deploy. This will instantly launch a coin based on the highlighted text. 
 
-Highlighting any Tweet Text in Uxento Vision will allow you to Quick Deploy.
+<Frame caption="Highlighting any Tweet Text in Uxento Vision will allow you to Quick Deploy.
+">
+  <img 
+    src="/images/qd1.png"
+    alt="quickdeploy"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 You can further customize your Quick Deploy settings via the Advanced settings button in the uDev Launcher. Just navigate to the Tweet Quick Deploy section and customize the SOL amount you wish to quick launch with.
+
+<Frame caption=" Advanced Settings Button
+">
+  <img 
+    src="/images/adv.png"
+    alt="quickdeploy"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+<Frame caption=" Quick Deploy Preset
+">
+  <img 
+    src="/images/qd2.png"
+    alt="quickdeploy"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 ## Launch Coins with BagsApp:
 
 uDev is also currently the only development platform that supports deployment via BagsApp; you do not need to do anything to connect uDev with BagsApp and will already be able to see it as an option when launching with uDev. You may also customize your developer fees when launching via BagsApp, to do this simply click Customize Bags Fees, input the Twitter Username you wish to share royalties with, and move the slider to your desired Fee Split. 
 
+<img 
+  src="/images/bags filt.png" 
+  alt="bags"
+  style={{
+    width: '80%',
+    maxWidth: '800px',
+    borderRadius: '12px',
+    display: 'block',
+    margin: '0 auto'
+  }}
+/>
+
+<Frame caption="BagsApp Fee Split Configuration">
+  <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', alignItems: 'flex-start' }}>
+    <img 
+      src="/images/feesplit x.png"
+      alt="BagsApp X Fee Split"
+      style={{
+        width: '100%',
+        maxWidth: '400px',
+        borderRadius: '12px',
+        display: 'block'
+      }}
+    />
+    <img 
+      src="/images/feesplit tt.png"
+      alt="BagsApp Twitter Fee Split"
+      style={{
+        width: '100%',
+        maxWidth: '400px',
+        borderRadius: '12px',
+        display: 'block'
+      }}
+    />
+  </div>
+</Frame>
+
 You can also view your active positions and claim SOL rewards from your BagsApp tokens. To do this, simply navigate to the External Connections pane under the Dev Mode settings menu and click View Positions. This will bring up any current tokens you have created, or are holding in your BagsApp connected Developer Wallet. 
+
+<Frame caption="BagsApp Fee Split Configuration">
+  <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
+    <img 
+      src="/images/bagsclaim.png"
+      alt="BagsApp X Fee Split"
+      style={{
+        width: '100%',
+        maxWidth: '400px',
+        borderRadius: '12px',
+        display: 'block'
+      }}
+    />
+    <img 
+      src="/images/bagsclaim2.png"
+      alt="BagsApp Twitter Fee Split"
+      style={{
+        width: '100%',
+        maxWidth: '400px',
+        borderRadius: '12px',
+        display: 'block'
+      }}
+    />
+  </div>
+</Frame>
 
 ## Custom AI Prompts:
 
-To make using uDev even easier, you can set-up AI Prompts to assist in the creation of your coin's ticker/coin names. These prompts work via the Star icon in the uDev Launch panel. 
+To make using uDev even easier, you can set-up AI Prompts to assist in the creation of your coin's ticker/coin names. These prompts work via the [Star icon](/uDev#how-to-launch-coins-with-udev%3A) in the uDev Launch panel. 
 
 To do this, click on the Settings button and navigate to the Dev Mode settings. Under the Custom AI Prompts pane, click the Add Prompt button and enter what prompts you would like to pair token generations with. You can manage prompts at any time via this page. 
 
-Add Your Own Custom AI Prompts
+<Frame caption=" Add Your Own Custom AI Prompts
+">
+  <img 
+    src="/images/aiprompt.png"
+    alt="Add Your Own Custom AI Prompts"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
-You Can Manage Your Prompts via the Dev Mode Settings Tab
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+
+<Frame caption=" You Can Manage Your Prompts via the Dev Mode Settings Tab
+">
+  <img 
+    src="/images/aiprompt2.png"
+    alt="Add Your Own Custom AI Prompts"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 ## Launch Coins via Your Trading Platform:
 
-While using uxtension on your trading platform, you will also be able to employ uDev's launcher to easily launch coins without leaving your trading platforms. When using Axiom, Nova, GMGN or Photon you will find a new option to either 'Create Coin' or 'Vamp Coin'.
+While using [uxtension](/uxtension) on your trading platform, you will also be able to employ uDev's launcher to easily launch coins without leaving your trading platforms. When using Axiom, Nova, GMGN or Photon you will find a new option to either 'Create Coin' or 'Vamp Coin'.
 
-uDev Buttons on Axiom
+<img 
+  src="/images/vampax.avif" 
+  alt="udev axiom"
+  style={{
+    width: '100%',
+    maxWidth: '800px',
+    borderRadius: '12px',
+    display: 'block',
+    margin: '0 auto'
+  }}
+/>
 
-Clicking both Create Coin or Vamp Coin will bring up the associated uDev Launch Panel. Just fill out the necessary fields and launch your coin. 
+
+
+Clicking both [Create Coin](/uDev#how-to-launch-coins-with-udev%3A) or [Vamp Coin](/uDev#vamp-coin%3A) will bring up the associated uDev Launch Panel. Just fill out the necessary fields and launch your coin. 
 
 If your trading platform offers a X/CT Tracker (such as Axiom/Photon), you may use uDev to launch coins natively from posts received there.
 
 To do so, simply navigate to your Trading Platforms X Tracker, ensure the uDev button is turned on and then you will be able to create tokens straight from individual posts by clicking the uDev Launch button right next to the post author's X @ handle.  
 
+<img 
+  src="/images/udevaxiom.png" 
+  alt="udev axiom"
+  style={{
+    width: '100%',
+    maxWidth: '800px',
+    borderRadius: '12px',
+    display: 'block',
+    margin: '0 auto'
+  }}
+/>
+
 You may also Vamp Coins directly from your Axiom Pulse cards. Simply click the 'Vamp' Button under the token info to be taken to the uDev Launcher. 
 
-Pulse Vamp Button
+<Frame caption=" Pulse Vamp Button
+">
+  <img 
+    src="/images/vampwhite.png"
+    alt="vamp pulse"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
+
+You may also Insta Vamp coins directly from Axiom Pulse cards. Simply click the purple Bat icon under the token info to auto-deploy a token via uDev. [Click here to learn more.](/uxtension#vamp-coins-on-axiom-with-uxtension%3A)
+
+<Frame caption=" Pulse Insta Vamp Button
+">
+  <img 
+    src="/images/vamppurp.png"
+    alt="vamp pulse"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
+
+You may also quickly Vamp coins when searching on Axiom. When searching for any coin, simply hit the Vamp icon that appears in the search list to quickly vamp it. 
+
+<Frame caption=" Vamp via Search
+">
+  <img 
+    src="/images/vampsearch.png"
+    alt="vamp pulse"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 ## Launch Coins via X:
 
 You can also launch coins directly while browsing X using uDev. Just click the 'u' button in the bottom left of any X post to open the uDev Launcher. From there, follow the prompts to seamlessly launch your coin through X.
 
-For this to work you must be on the X post. - e.g. "x.com/elonmusk/status/xxxx
+<Note>For this to work you must be on the X post. - e.g. "x.com/elonmusk/status/xxxx</Note>
 
-uDev on X
+
+<Frame caption="uDev on X
+ 
+">
+  <img 
+    src="/images/udevx.png"
+    alt="udev on x"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 ## Launch Coins via Discord:
 
-You can also use uDev seamlessly within Discord, to learn more, click here. 
+[You can also use uDev seamlessly within Discord, to learn more, click here.](/uxtension#discord-overlay-customization) 
+
+## Launch Coins Anywhere on the Web with uxtension:
+
+You can also use uDev with its uxento companion, [uxtension](/uxtension) to launch/vamp coins from any page on the web. [To learn more, click here.](/uxtension#create-coins-via-uxtension)
 
 ## Buy/Sell with uDev:
 
 You may also use uDev to conduct your dev buy/sell trades with only a 0.75% fee (most platforms utilize a 1% fee) when creating your token. To do so ensure the Trade Coin toggle is enabled in your uDev Launch Panel.
 
-Trade Coin can be Toggled Off/On
+<Frame caption="Trade Coin can be Toggled Off/On 
+">
+  <img 
+    src="/images/tradetog.png"
+    alt="buysell"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 You can adjust your buy/sell tips and slippage via the Dev Mode settings under the settings tab. 
 
-Dev Mode Buy/Sell Settings
+<Frame caption="Dev Mode Buy/Sell Settings
+">
+  <img 
+    src="/images/devmodeset.png"
+    alt="buysell"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
+
 
 ## Monitor uDev Assets:
 
-You can easily view and manage tokens held within your uDev Wallets via the uDev Sell Panel which can be accessed via Uxento Vision. 
+You can easily view and manage tokens held within your uDev Wallets via the [uDev Sell Panel which can be accessed via Uxento Vision.](/uxento-vision#show-udev-sell-panel%3A)
+
+<Frame caption="uDev Sell Panel
+">
+  <img 
+    src="/images/SELLPAN.png"
+    alt="buysell"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 Within the uDev Sell Panel you may view all necessary token information as well as access Quick Sell buttons to quickly execute trades. 
 
@@ -293,46 +684,252 @@ Within the uDev Sell Panel you may view all necessary token information as well 
 
 Within the Sell Panel you may also generate custom uDev PnL cards for tokens you've held or created. To do this, simply click the PnL button next to any currently held or previously traded position in your wallet.
 
-By clicking the USD/SOL toggle in the top left of your generated PnL card you can swap the displayed currency of your PnL!
+<Frame caption="uDev PNL
+">
+  <img 
+    src="/images/GENPNL.png"
+    alt="PNL"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
+
+<Note>By clicking the USD/SOL toggle in the top left of your generated PnL card you can swap the displayed currency of your PnL!</Note>
 
 ## Custom uDev Priority Fees:
 
-You may also customise your 'Create Coin' priority fee for faster execution. This can be done via the Dev Mode settings panel in Uxento Vision under the 'Create Coin Settings' pane, or the Advanced Settings in your uDev Launch Panel. Simply change the fee higher or lower to suit your needs. 
+You may also customise your 'Create Coin' priority fee for faster execution. This can be done via the Dev Mode settings panel in Uxento Vision under the 'Create Coin Settings' pane, or the [Advanced Settings](/uDev#advanced-settings%3A) in your uDev Launch Panel. Simply change the fee higher or lower to suit your needs. 
 
-Create Coin Settings
+<Frame caption="Create Coin Settings">
+  <img 
+    src="/images/devmodeset2.png"
+    alt="PNL"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 ## Sniper/Bundler:
 
-uxento also comes complete with a Sniper and Bundler for devs who use multiple wallets linked to uDev when launching coins. This feature is currently only compatible with launches on pump.fun. To configure this, simply click on the Snipe/Bundle Configuration Button to configure either tool. 
+uxento also comes complete with a Sniper and Bundler for devs who use multiple wallets linked to uDev when launching coins.
+
+<Warning>This feature is currently only compatible with launches on pump.fun.</Warning>
+
+ To configure this, simply click on the Snipe/Bundle Configuration Button to configure either tool. 
+
+<Frame caption="Sniper/Bundle Configuration Button">
+  <img 
+    src="/images/snibun.png"
+    alt="sniper/bundler"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 Within the configuration settings you may select which wallets you wish to use to Snipe/Bundle with as well as customize the SOL amount that wallet will us when executing transactions.
 
+<Frame caption="">
+  <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', alignItems: 'flex-start' }}>
+    <img 
+      src="/images/sniconfig.png"
+      alt="Sniper Configuration"
+      style={{
+        width: '100%',
+        maxWidth: '300px',
+        borderRadius: '12px',
+        display: 'block'
+      }}
+    />
+    <img 
+      src="/images/snipoff.png"
+      alt="Sniper Off"
+      style={{
+        width: '97%',
+        maxWidth: '300px',
+        borderRadius: '12px',
+        display: 'block'
+      }}
+    />
+    <img 
+      src="/images/bundconfig.png"
+      alt="Bundler Configuration"
+      style={{
+        width: '100%',
+        maxWidth: '300px',
+        borderRadius: '12px',
+        display: 'block'
+      }}
+    />
+  </div>
+</Frame>
+
 While active, the Configuration icon in your uDev Launch Panel will be highlighted, displaying the active tool and how many wallets are configured to be used. 
 
+<Frame caption="Active Bundle Configuration with 1 Bundle Wallet">
+  <img 
+    src="/images/snip1.png"
+    alt="sniper"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+
+<Frame caption="Active Sniper Configuration with 1 Sniper Wallet">
+  <img 
+    src="/images/bund.png"
+    alt="bundler"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 ## Multi-Deploy Tokens: 
 
 When launching coins, you may easily deploy multiple of the same token. To do this, simply click on the Blocks icon in the top right of your uDev Launch Panel.
 
-Once you are in the Multi-Deploy settings you may set how many additional coins you wish to deploy (up to four), and the amounts for each multi-coin. 
+<Frame caption="Multi-Deploy Settings">
+  <img 
+    src="/images/mutli.png"
+    alt="multi"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
+Once you are in the Multi-Deploy settings you may set how many additional coins you wish to deploy (up to four), and the amounts for each multi-coin. 
+<Frame caption="Multi-Deploy Configuration">
+  <img 
+    src="/images/multconfig.png"
+    alt="multi"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 While active, the Multi-Deploy icon in your uDev Launch Panel will be highlighted, displaying the number of additional coins you wish to deploy. 
+
+<Frame caption="Multi-Deploy Active with 4 Additional Coins">
+  <img 
+    src="/images/multtt.png"
+    alt="multi"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 ## Auto-Sell: 
 
 uDev also has a built-in feature toAuto-Sell when deploying coins. To do this, simply click the Robot icon in the top right of your uDev Launch Panel. 
 
-Once you are in the Farm Snipers Settings you may toggle the feature on/off, as well as edit the Sell Delay Configuration. Smaller number = less delay. 
+<Frame caption="Auto-Sell Settings">
+  <img 
+    src="/images/auto.png"
+    alt="autosell"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
+
+Once you are in the Farm Snipers Settings you may toggle the feature on/off, as well as edit the Sell Delay Configuration. **Smaller number = less delay.**
+
+<Frame caption="Active Sniper Configuration with 0.5ms Delay">
+  <img 
+    src="/images/autoconf.png"
+    alt="autosell"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 While active, the Farm Snipers icon in your uDev Launch Panel will be highlighted, displaying the Sell Delay Configuration in milliseconds. 
 
+<Frame caption="Active Sniper Configuration with 0.5ms Delay">
+  <img 
+    src="/images/autssss.png"
+    alt="autosell"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
+
 ## Launch Coins with USD1:
 
-When using uDev to launch coins via Bonk - you may also use USD1 instead of Solana to deploy your token. To do this, simply click the currency toggle from SOL to USD1.
+When using uDev to launch coins via [Bonk](/udev#how-to-launch-coins-with-udev%3A) - you may also use USD1 instead of Solana to deploy your token. To do this, simply click the currency toggle from SOL to USD1.
+
+<img 
+  src="/images/usd1.png" 
+  alt="udev axiom"
+  style={{
+    width: '60%',
+    maxWidth: '800px',
+    borderRadius: '12px',
+    display: 'block',
+    margin: '0 auto'
+  }}
+/>
 
 ## Advanced Settings:
 
 Within the uDev Creator Module, you can access a range of advanced settings to further fine tune your launch experience via uDev. 
+
+<Frame caption="Advanced Settings Access">
+  <img 
+    src="/images/adv.png"
+    alt="autosell"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 **These settings include:**
 
@@ -351,46 +948,161 @@ Toggle On/Off uDev Legacy UI
 **Keyboard Shortcuts:**<br/>
 Easily create and customize quick keyboard shortcuts for a range of quick actions i.e. Deploy Coin or Quick Deploy 3 SOL.
 
+<Frame caption="Advanced Settings Panel">
+  <img 
+    src="/images/advset1.png"
+    alt="settings"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
+
+
 ## Manage Developer Wallets in uDev:
 
-While you only need to use uDev with the wallet provided to you, you also have to option to import and manage multiple wallets. To do this, simply navigate to the Settings button and go to the Dev Mode panel. Once in the Dev Mode settings, you can scroll to the bottom to find a wallet management tab. 
+While you only need to use uDev with the wallet provided to you, you also have to option to import and manage multiple wallets. To do this, simply navigate to the Settings button and go to the **Dev Mode** panel. 
 
-Dev Mode Wallet Management Tab
+Once in the Dev Mode settings, you can scroll to the bottom to find a wallet management tab. 
+
+<Frame caption="Dev Mode Wallet Management Tab">
+  <img 
+    src="/images/mngwal.png"
+    alt="wallet manager"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 Within this tab you can manage all wallets associated with your uDev profile, import wallets, delete wallets and adjust your preferred primary wallet. 
 
 You can also see an overview of your main wallet and its balance at the bottom of the of the page. 
 
-Wallet Overview Easily Accessible at the Bottom of your Home Page
+<Frame caption="Wallet Overview Easily Accessible at the Bottom of your Home Page
+">
+  <img 
+    src="/images/walletview.png"
+    alt="wallet manager"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
-## Manage uDev Wallets Via Discord:
+#### Manage uDev Wallets Via Discord:
 
-You may also manage your wallets via Discord, if you are a member of the Uxento Discord Server.​
+You may also manage your wallets via Discord, if you are a member of the [Uxento Discord Server.](https://discord.gg/uxento)
 
 Within Uxento's Discord Server, there is a dedicated 'uDev' channel which you can use to interface with your wallet manager and send uDev related slash commands. 
 
-**uDev Slash Commands**
+<Frame caption="uDev Discord Channel">
+  <img 
+    src="/images/udevdiscord.png"
+    alt="wallet manager"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
+
+<div style={{ marginBottom: '1.5rem' }}></div>
+
+
+<Frame caption="uDev Slash Commands">
+  <img 
+    src="/images/slashcmds.png"
+    alt="wallet manager"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
+
+
 
 `/dev account`
 
-The /dev account command allows you to see a display of your Dev account including the balance and public key of your primary wallet and how many wallets you have in your Dev account. 
+The `/dev account` command allows you to see a display of your Dev account including the balance and public key of your primary wallet and how many wallets you have in your Dev account. 
 
-uDev Dev Account Panel
+
+<Frame caption="uDev Dev Account Panel
+">
+  <img 
+    src="/images/devacc.png"
+    alt="slash commands"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
 `/dev import`
 
-The /dev import command allows you to import any Solana wallet you wish to use with uDev, simply enter the private key of the wallet you wish to import. 
+The `/dev import` command allows you to import any Solana wallet you wish to use with uDev, simply enter the private key of the wallet you wish to import. 
 
-Import the Private key of the wallet you wish to Import.
+<Frame caption="Import the Private key of the wallet you wish to Import.
+">
+  <img 
+    src="/images/devimp1.png"
+    alt="slash commands"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 
-Wallet Imported
+<div style={{ marginBottom: '1.5rem' }}></div>
 
+
+<Frame caption="Wallet Imported
+">
+  <img 
+    src="/images/devimp2.png"
+    alt="slash commands"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
 `/dev wallets`
 
-The /dev wallets command allows you to manage all of your uDev wallets via an interface where you can delete wallets, and set a new primary wallet by using the embedded buttons.  
+The `/dev wallets` command allows you to manage all of your uDev wallets via an interface where you can delete wallets, and set a new primary wallet by using the embedded buttons.  
 
-uDev Wallet Manager Panel
-
-<Info>
-uDev is currently in beta. Some features may be limited during the testing phase.
-</Info>
+<Frame caption="
+uDev Wallet Manager Panel">
+  <img 
+    src="/images/devwall.png"
+    alt="slash commands"
+    style={{
+      width: '400%',
+      borderRadius: '12px',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</Frame>
