@@ -19,7 +19,13 @@
       {
         "group": "Tools",
         "pages": [
-          "uxento-vision",
+          {
+            "group": "Uxento Vision",
+            "pages": [
+              "uxento-vision",
+              "bridge"
+            ]
+          },
           "uxtension",
           "udev",
           "ulaunch"
