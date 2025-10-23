@@ -1,11 +1,6 @@
 /* ——— Minimal reset for homepage ——— */
 
 /* Hide title and group ONLY on welcome page */
-.welcome-page ~ * .eyebrow,
-.welcome-page ~ * #page-title,
-.welcome-page ~ * h1:not(.splash-title),
-.welcome-page ~ * nav[aria-label="Breadcrumb"],
-.welcome-page ~ * nav[aria-label="Breadcrumbs"],
 body:has(.welcome-page) .eyebrow,
 body:has(.welcome-page) #page-title,
 body:has(.welcome-page) h1:not(.splash-title),
@@ -71,10 +66,7 @@ body:has([data-mode="full"]) .content {
 }
 
 /* Background color for all pages */
-body { background-color: #0a0a0f !important; }
-html { background-color: #0a0a0f !important; }
-
-/* Dark mode background */
+body, html,
 [data-theme="dark"] body,
 [data-theme="dark"] html,
 .dark body,
@@ -87,11 +79,9 @@ html.dark {
 /* Main content area background - removed to fix callout components */
 
 /* Hide default "Powered by Mintlify" and show custom branding */
-footer a[href*="mintlify.com"],
 footer a[href*="mintlify"],
 footer .powered-by,
 footer .mintlify-branding,
-footer a[href*="mintlify.com"]:after,
 footer a[href*="mintlify"]:after { 
   display: none !important; 
   visibility: hidden !important;
@@ -142,7 +132,7 @@ footer a:hover {
   opacity: 1 !important;
 }
 
-/* Smaller frame captions - centered - ultra aggressive targeting */
+/* Frame captions styling */
 [data-component="frame"] figcaption,
 .frame figcaption,
 figcaption,
@@ -150,45 +140,8 @@ figcaption,
 [class*="caption"],
 [data-caption],
 [data-testid="caption"],
-.frame .caption,
-.frame [class*="caption"],
-.frame [data-caption],
-div[class*="frame"] figcaption,
-div[class*="frame"] .caption,
-div[class*="frame"] [class*="caption"],
-main figcaption,
-main .caption,
-main [class*="caption"],
-.prose figcaption,
-.prose .caption,
-.prose [class*="caption"],
-body figcaption,
-body .caption,
-body [class*="caption"],
-span[class*="caption"],
-p[class*="caption"],
-div[class*="caption"],
-/* Mintlify Frame component specific targeting */
 div[class*="Frame"] figcaption,
 div[class*="Frame"] .caption,
-div[class*="Frame"] [class*="caption"],
-div[class*="Frame"] p,
-div[class*="Frame"] span,
-div[class*="Frame"] div[class*="text"],
-div[class*="Frame"] div[class*="caption"],
-/* Target any text element inside a Frame */
-div[class*="Frame"] > *:not(img):not(video):not(iframe),
-div[class*="Frame"] *:not(img):not(video):not(iframe) {
-  font-size: 0.1rem !important;
-  opacity: 0.8 !important;
-  text-align: center !important;
-  display: block !important;
-  margin: 0.5rem auto 0 auto !important;
-  width: 100% !important;
-  max-width: none !important;
-}
-
-/* Target Mintlify's actual Frame caption structure */
 [data-component-part="frame-caption"],
 [data-component-part="frame-caption"] p,
 [data-component-part="frame-caption"] * {
@@ -217,62 +170,23 @@ nav [data-testid="site-name"] {
   opacity: 0 !important;
 }
 
-/* Make page titles much larger */
-h1,
-#page-title,
-.page-title,
-main h1,
-.prose h1,
-[data-testid="page-title"] {
+/* Page title styling */
+h1, #page-title, .page-title, main h1, .prose h1, [data-testid="page-title"] {
   font-size: 2.625rem !important;
   font-weight: 800 !important;
   line-height: 1.1 !important;
-  margin-bottom: 0rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* Tighten spacing between page title and subtitle */
-h1 + p,
-#page-title + p,
-.page-title + p,
-main h1 + p,
-.prose h1 + p,
-[data-testid="page-title"] + p,
-h1 + .description,
-#page-title + .description,
-.page-title + .description,
-main h1 + .description,
-.prose h1 + .description,
-[data-testid="page-title"] + .description {
-  margin-top: 0rem !important;
+/* Page title subtitle spacing */
+h1 + p, h1 + .description,
+#page-title + p, #page-title + .description,
+.page-title + p, .page-title + .description,
+main h1 + p, main h1 + .description,
+.prose h1 + p, .prose h1 + .description,
+[data-testid="page-title"] + p, [data-testid="page-title"] + .description {
+  margin-top: 0 !important;
   margin-bottom: 1.5rem !important;
 }
 
-/* More aggressive spacing removal */
-h1,
-h1 *,
-#page-title,
-#page-title *,
-.page-title,
-.page-title *,
-main h1,
-main h1 *,
-.prose h1,
-.prose h1 *,
-[data-testid="page-title"],
-[data-testid="page-title"] * {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* Target any elements that might be between title and subtitle */
-h1 + *,
-#page-title + *,
-.page-title + *,
-main h1 + *,
-.prose h1 + *,
-[data-testid="page-title"] + * {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
