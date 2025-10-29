@@ -1,24 +1,21 @@
 ---
 title: "Welcome"
-hideTitle: true
+hideTitle: "true"
 mode: "wide"
 ---
 
 <div className="welcome-page splash">
-  <div className="splash-video">
-      <video
-        className="splash-video-el"
-        src="/videos/splash.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-        controls={false}
-        preload="metadata"
-      />
-  </div>
-  <h1 className="splash-title">welcome to uxento</h1>
-  <p className="splash-subtitle">tools designed for u.</p>
+<div className="splash-video">
+<video className="splash-video-el" src="/videos/splash.mp4" autoPlay muted loop playsInline controls={false} preload="metadata" />
+
+</div>
+
+<h1 className="splash-title">
+welcome to uxento</h1>
+
+ <p className="splash-subtitle">
+tools designed for u.</p>
+
 </div>
 
 <Columns cols={2}>
@@ -37,7 +34,7 @@ mode: "wide"
   <Card title="Bridge" icon="arrow-right-arrow-left" href="/bridge">
     Powered by Sideshift, bridge currencies seemlessly.
   </Card>
-    <Card title="Referrals" icon="users" href="/referrals">
+  <Card title="Referrals" icon="users" href="/referrals">
     Earn rewards by using and referring others to uxento tools.
   </Card>
 </Columns>
